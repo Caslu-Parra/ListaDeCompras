@@ -9,13 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ListaDeCompras
 build_property.RootNamespace = ListaDeCompras
-build_property.ProjectDir = d:\lp_dir\AspNet\ListaDeCompras\
+build_property.ProjectDir = c:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\lp_dir\AspNet\ListaDeCompras
+build_property.MSBuildProjectDirectory = c:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/lp_dir/AspNet/ListaDeCompras/Pages/Index.cshtml]
+[c:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
