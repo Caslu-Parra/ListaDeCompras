@@ -1,0 +1,28 @@
+@page
+@model ListaDeCompras.Pages.Categorias
+@{
+    ViewData["Title"] = "Categorias";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Título</td>
+                <td>Preço</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var categoria in @Model.lCategorias)
+            {
+                <tr>
+                    <td>@categoria.Id</td>
+                    <td>@categoria.Titulo</td>
+                    <td>@categoria.Preco.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

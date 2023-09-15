@@ -1,21 +1,8 @@
 @page
 @model ListaDeCompras.Pages.Index
 
-<html>
+@{
+    ViewData["Title"] = "Home";
+}
 
-<head>
-    <title></title>
-</head>
-
-<body>
-    <div>
-        <ul>
-            @for (int i = 0; i < 5; i++)
-            {
-                <li>Teste @i</li>
-            }
-        </ul>
-    </div>
-</body>
-
-</html>
+<h1>@ViewData["Title"]</h1>

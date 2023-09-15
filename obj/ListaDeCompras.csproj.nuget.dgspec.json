@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "d:\\lp_dir\\AspNet\\ListaDeCompras\\ListaDeCompras.csproj": {}
+    "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\ListaDeCompras.csproj": {}
   },
   "projects": {
-    "d:\\lp_dir\\AspNet\\ListaDeCompras\\ListaDeCompras.csproj": {
+    "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\ListaDeCompras.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\lp_dir\\AspNet\\ListaDeCompras\\ListaDeCompras.csproj",
+        "projectUniqueName": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\ListaDeCompras.csproj",
         "projectName": "ListaDeCompras",
-        "projectPath": "d:\\lp_dir\\AspNet\\ListaDeCompras\\ListaDeCompras.csproj",
-        "packagesPath": "C:\\Users\\Lucas Parra\\.nuget\\packages\\",
-        "outputPath": "d:\\lp_dir\\AspNet\\ListaDeCompras\\obj\\",
+        "projectPath": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\ListaDeCompras.csproj",
+        "packagesPath": "C:\\Users\\lucas.parra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lucas Parra\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\lucas.parra\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

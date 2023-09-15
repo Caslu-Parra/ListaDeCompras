@@ -4,7 +4,8 @@ namespace ListaDeCompras.Pages
 {
     public class Index : PageModel
     {
-        public void OnGet() { }
-        public void OnPost() { }
+        public void OnGet()
+        {
+        }
     }
 }
