@@ -1,0 +1,52 @@
+@page
+@model ListaDeCompras.Pages.Produtos.Index
+@{
+    ViewData["Title"] = "Listagem de Produtos";
+}
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-page="./Create">Adicionar</a>
+    </div>
+    <br />
+    <table class="table table-striped" id="dtcontatos">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Referencia</th>
+                <th scope="col">Responsavel</th>
+                <th scope="col">Data de Inclusão</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                if (Model != null && Model.Listar().Any())
+                {
+                    foreach (Produto produto in Model.Listar())
+                    {
+                        <tr scope="row">
+                            <th id="@produto.Id">@produto.Id</th>
+                            <td>@produto.Nome</td>
+                            <td>@produto.Referencia</td>
+                            <td>@produto.Responsavel.Nome</td>
+                            <td>@produto.DtHrInclusao</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <a type="button" class="btn btn-sm btn-primary" asp-page="./Edit" asp-route-pId="@produto.Id">Editar</a>
+                                    <a type="button" class="btn btn-sm btn-danger" asp-route-pId="@produto.Id">Deletar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>
+@section scripts {
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.js"></script>
+    <script src="~/js/site.js"></script>
+}

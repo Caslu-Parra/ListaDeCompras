@@ -1,0 +1,45 @@
+@page
+@model ListaDeCompras.Pages.Produtos.Create
+@{
+    ViewData["Title"] = "Create";
+
+    Usuario user = new Usuario{
+        Id = 0,
+        Nome = "Lucas",
+        Senha = "1234",
+        Acesso = 0
+    };
+}
+
+<h1>Criacao de Produtos</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Produto.Nome" class="control-label">Produto</label>
+                <input asp-for="Produto.Nome" class="form-control" />
+                <span asp-validation-for="Produto.Nome" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <select asp-for="Produto.Responsavel" name="SelectedTags">
+                    <option value=@user>@user.Nome</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Produto.Referencia" class="control-label">Produto de Referência</label>
+                <input asp-for="Produto.Referencia" class="form-control" />
+                <span asp-validation-for="Produto.Referencia" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Adicionar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-page="Index">Voltar para o menu</a>
+</div>
