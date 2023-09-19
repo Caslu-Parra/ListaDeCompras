@@ -1,0 +1,38 @@
+@page
+@model ListaDeCompras.Pages.Produtos.Edit
+@{
+    ViewData["Title"] = "Edit";
+    ViewData["Acao"] = "Edição de Produtos";
+}
+
+<h1>@ViewData["Acao"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Produto.Nome" class="control-label"></label>
+                <input asp-for="Produto.Nome" class="form-control" />
+                <span asp-validation-for="Produto.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Produto.Responsavel" class="control-label"></label>
+                <input asp-for="Produto.Responsavel.Id" class="form-control" />
+                <span asp-validation-for="Produto.Responsavel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Produto.DtHrInclusao" class="control-label">Data / Hora da Inclusão</label>
+                <input asp-for="Produto.DtHrInclusao" type="datetime-local" class="form-control" />
+                <span asp-validation-for="Produto.DtHrInclusao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>

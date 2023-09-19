@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ListaDeCompras.Models
 {
-    public record Usuario
+    public class Usuario
     {
         [Key]
         public int Id { get; set; }

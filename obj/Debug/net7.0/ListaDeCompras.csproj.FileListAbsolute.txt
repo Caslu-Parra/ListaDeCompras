@@ -70,12 +70,12 @@ C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\scopedcss\Pages\Sobre\Sobre.cshtml.rz.scp.css
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\scopedcss\bundle\ListaDeCompras.styles.css
+C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\scopedcss\projectbundle\ListaDeCompras.bundle.scp.css
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.csproj.CopyComplete
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.dll
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\refint\ListaDeCompras.dll
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.pdb
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.genruntimeconfig.cache
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\ref\ListaDeCompras.dll
-C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\scopedcss\projectbundle\ListaDeCompras.bundle.scp.css
-C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\scopedcss\Pages\Sobre\Sobre.cshtml.rz.scp.css
