@@ -1,3 +1,4 @@
+using ListaDeCompras.Controllers.Produtos;
 using ListaDeCompras.Database;
 using ListaDeCompras.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -15,23 +16,25 @@ namespace ListaDeCompras.Pages.Produtos
             _logger = logger;
         }
 
-
         [BindProperty]
-        public Produto Produto { get; set; }
+        public ProdutoBindView Produto { get; set; } = null;
+        public List<Usuario> GetUsuarios() => _conexao.Usuarios.ToList();
 
         public async Task<IActionResult> OnPostAsync()
         {
-            // Usuario user = _conexao.Usuarios.FirstOrDefault(x => x.Id == Produto.Responsavel.Id);
-
             if (!ModelState.IsValid)
             {
-                _logger.LogError("Not valid");
                 return Page();
             }
 
-            // var entry = _conexao.Add(new Produto());
-            // entry.CurrentValues.SetValues(this.Produto);
-            // await _conexao.SaveChangesAsync();
+            _conexao.Produtos.Add(new Produto
+            {
+                Nome = this.Produto.Nome,
+                DtHrInclusao = this.Produto.DtHrInclusao,
+                Referencia = this.Produto.Referencia,
+                Responsavel = _conexao.Usuarios.First(u => u.Id == this.Produto.ResponsavelId)
+            });
+            await _conexao.SaveChangesAsync();
             return RedirectToPage("./Index");
         }
     }

@@ -2,32 +2,40 @@
 @model ListaDeCompras.Pages.Produtos.Edit
 @{
     ViewData["Title"] = "Edit";
-    ViewData["Acao"] = "Edição de Produtos";
 }
 
-<h1>@ViewData["Acao"]</h1>
+<h1>Edição de Produtos</h1>
 
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Produto.Nome" class="control-label"></label>
+                <label asp-for="Produto.Nome" class="control-label">Produto</label>
                 <input asp-for="Produto.Nome" class="form-control" />
                 <span asp-validation-for="Produto.Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Produto.Responsavel" class="control-label"></label>
-                <input asp-for="Produto.Responsavel.Id" class="form-control" />
-                <span asp-validation-for="Produto.Responsavel" class="text-danger"></span>
+                @* <label asp-for="Produto.Responsavel.Id" class="control-label">Usuário Resposável</label>
+                <select class="form-select" asp-for="Produto.Responsavel.Id" required aria-label="Usuário Resposável">
+                    @foreach (Usuario user in Model.GetUsuarios())
+                    {
+                        <option asp-for="Produto.Responsavel.Id" value=@user.Id>@user.Nome</option>
+                    }
+                </select>
+                <span asp-validation-for="Produto.Responsavel.Id" class="text-danger"></span> *@
             </div>
             <div class="form-group">
-                <label asp-for="Produto.DtHrInclusao" class="control-label">Data / Hora da Inclusão</label>
-                <input asp-for="Produto.DtHrInclusao" type="datetime-local" class="form-control" />
-                <span asp-validation-for="Produto.DtHrInclusao" class="text-danger"></span>
+                <label asp-for="Produto.Referencia" class="control-label">Produto de Referência</label>
+                <input asp-for="Produto.Referencia" class="form-control" />
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label asp-for="Produto.DtHrInclusao" class="control-label">Horário da Inclusão</label>
+                <input asp-for="Produto.DtHrInclusao" type="datetime-local" class="form-control" readonly />
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Adicionar" class="btn btn-primary" />
             </div>
         </form>
     </div>
