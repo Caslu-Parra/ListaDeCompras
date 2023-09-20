@@ -2,6 +2,7 @@ using ListaDeCompras.Database;
 using ListaDeCompras.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 
 namespace ListaDeCompras.Pages.Produtos
 {
@@ -37,24 +38,8 @@ namespace ListaDeCompras.Pages.Produtos
             else new Exception($"Houve um erro ao tentar atualizar o Produto");
             _conexao.SaveChangesAsync();
         }
-        public List<Produto> Listar()
-        {
-            try
-            {
-                return _conexao.Produtos.Join(_conexao.Usuarios,
-                prd => prd.Responsavel.Id,
-                usr => usr.Id,
-                (prd, usr) => new Produto()
-                {
-                    Id = prd.Id,
-                    Nome = prd.Nome,
-                    Responsavel = usr,
-                    DtHrInclusao = prd.DtHrInclusao,
-                    Referencia = prd.Referencia
-                }).ToList();
-            }
-            catch (Exception) { throw; }
-        }
+        public List<Produto> Listar() => _conexao.Produtos.Include(p => p.Responsavel).ToList();
+
         public void Delete(int idProduto)
         {
             _conexao.Produtos.Remove(_conexao.Produtos.First(p => p.Id == idProduto));
