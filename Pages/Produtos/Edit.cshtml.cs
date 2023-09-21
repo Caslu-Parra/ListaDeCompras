@@ -13,10 +13,8 @@ namespace ListaDeCompras.Pages.Produtos
         private readonly ILogger<Create> _logger;
 
         [BindProperty]
-        public Produto Produto { get; set; }
-
+        public ProdutoBindView ProdutoBind { get; set; }
         public List<Usuario> GetUsuarios() => _conexao.Usuarios.ToList();
-
         public Edit(ILogger<Create> logger, BancoContext dbContext)
         {
             _conexao = dbContext;
@@ -24,35 +22,38 @@ namespace ListaDeCompras.Pages.Produtos
         }
         public async Task<IActionResult> OnGetAsync(int? pId)
         {
-            Produto prod = _conexao.Produtos.Include(p => p.Responsavel).First(p => p.Id == pId);
+            Produto prod = await _conexao.Produtos.Include(p => p.Responsavel).FirstAsync(p => p.Id == pId);
 
             if (pId == null || prod == null)
             {
                 return NotFound();
             }
-            else Produto = prod;
-            
+            else ProdutoBind = new ProdutoBindView()
+            {
+                Id = prod.Id,
+                Nome = prod.Nome,
+                DtHrInclusao = prod.DtHrInclusao,
+                Referencia = prod.Referencia,
+                ResponsavelId = prod.Responsavel.Id
+            };
+
             return Page();
         }
-        public async Task<IActionResult> OnPostAsync(int id)
+        public async Task<IActionResult> OnPostAsync()
         {
-            var prodToUpdate = await _conexao.Produtos.FindAsync(id);
-
-            if (prodToUpdate == null)
+            if (!ModelState.IsValid)
             {
-                return NotFound();
+                return Page();
             }
+            Produto ProdUpdate = await _conexao.Produtos.FindAsync(ProdutoBind.Id);
 
-            if (await TryUpdateModelAsync(
-                prodToUpdate,
-                "produto",
-                p => p.Nome, p => p.Responsavel, p => p.DtHrInclusao))
-            {
-                await _conexao.SaveChangesAsync();
-                return RedirectToPage("./Index");
-            }
+            ProdUpdate.Nome = ProdutoBind.Nome;
+            ProdUpdate.Referencia = ProdutoBind.Referencia;
+            ProdUpdate.Responsavel = await _conexao.Usuarios.FindAsync(ProdutoBind.ResponsavelId);
 
-            return Page();
+            _conexao.Produtos.Update(ProdUpdate);
+            await _conexao.SaveChangesAsync();
+            return RedirectToPage("./Index");
         }
     }
 }

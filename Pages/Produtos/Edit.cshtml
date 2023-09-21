@@ -11,27 +11,38 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Produto.Nome" class="control-label">Produto</label>
-                <input asp-for="Produto.Nome" class="form-control" />
-                <span asp-validation-for="Produto.Nome" class="text-danger"></span>
+                <label asp-for="ProdutoBind.Id" hidden class="control-label">Produto</label>
+                <input asp-for="ProdutoBind.Id" hidden class="form-control" />
             </div>
             <div class="form-group">
-                @* <label asp-for="Produto.Responsavel.Id" class="control-label">Usuário Resposável</label>
-                <select class="form-select" asp-for="Produto.Responsavel.Id" required aria-label="Usuário Resposável">
+                <label asp-for="ProdutoBind.Nome" class="control-label">Produto</label>
+                <input asp-for="ProdutoBind.Nome" class="form-control" />
+                <span asp-validation-for="ProdutoBind.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProdutoBind.ResponsavelId" class="control-label">Usuário Resposável</label>
+                <select class="form-select" asp-for="ProdutoBind.ResponsavelId" required aria-label="Usuário Resposável">
                     @foreach (Usuario user in Model.GetUsuarios())
                     {
-                        <option asp-for="Produto.Responsavel.Id" value=@user.Id>@user.Nome</option>
+                        if (user.Id == Model.ProdutoBind.ResponsavelId)
+                        {
+                            <option selected asp-for="ProdutoBind.ResponsavelId" value=@user.Id>@user.Nome</option>
+                        }
+                        else
+                        {
+                            <option asp-for="ProdutoBind.ResponsavelId" value=@user.Id>@user.Nome</option>
+                        }
                     }
                 </select>
-                <span asp-validation-for="Produto.Responsavel.Id" class="text-danger"></span> *@
+                <span asp-validation-for="ProdutoBind.ResponsavelId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Produto.Referencia" class="control-label">Produto de Referência</label>
-                <input asp-for="Produto.Referencia" class="form-control" />
+                <label asp-for="ProdutoBind.Referencia" class="control-label">Produto de Referência</label>
+                <input asp-for="ProdutoBind.Referencia" class="form-control" />
             </div>
             <div class="form-group">
-                <label asp-for="Produto.DtHrInclusao" class="control-label">Horário da Inclusão</label>
-                <input asp-for="Produto.DtHrInclusao" type="datetime-local" class="form-control" readonly />
+                <label asp-for="ProdutoBind.DtHrInclusao" class="control-label">Horário da Inclusão</label>
+                <input asp-for="ProdutoBind.DtHrInclusao" type="datetime-local" class="form-control" disabled />
             </div>
             <br>
             <div class="form-group">

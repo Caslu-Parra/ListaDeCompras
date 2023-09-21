@@ -1,13 +1,16 @@
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container-fluid">
-        <a class="navbar-brand" asp-page="/Index">ListaDeCompras</a>
+        <a class="navbar-brand" asp-page="@Url.Content("~/Index")">ListaDeCompras</a>
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
                 <li class="nav-item">
-                    <a class="nav-link active" asp-page="/Index">Home</a>
+                    <a class="nav-link active" asp-page="@Url.Content("~/Index")">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-page="Produtos/Index">Produtos</a>
+                    <a class="nav-link" asp-page="@Url.Content("~/Produtos/Index")" >Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-page="@Url.Content("~/Error/Index")">Error</a>
                 </li>
             </ul>
         </div>

@@ -10,6 +10,7 @@ builder.Services.AddDbContext<BancoContext>(options
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
