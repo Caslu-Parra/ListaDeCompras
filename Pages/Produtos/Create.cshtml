@@ -18,7 +18,7 @@
             <div class="form-group">
                 <label asp-for="Produto.ResponsavelId" class="control-label">Usuário Resposável</label>
                 <select class="form-select" asp-for="Produto.ResponsavelId" required aria-label="Usuário Resposável">
-                    @foreach (Usuario user in Model.GetUsuarios())
+                    @foreach (UsuarioModel user in Model.GetUsuarios())
                     {
                         <option asp-for="Produto.ResponsavelId" value=@user.Id>@user.Nome</option>
                     }

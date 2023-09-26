@@ -18,7 +18,7 @@ namespace ListaDeCompras.Pages.Produtos
 
         [BindProperty]
         public ProdutoBindView Produto { get; set; } = null;
-        public List<Usuario> GetUsuarios() => _conexao.Usuarios.ToList();
+        public List<UsuarioModel> GetUsuarios() => _conexao.Usuarios.ToList();
 
         public async Task<IActionResult> OnPostAsync()
         {
@@ -27,7 +27,7 @@ namespace ListaDeCompras.Pages.Produtos
                 return Page();
             }
 
-            _conexao.Produtos.Add(new Produto
+            _conexao.Produtos.Add(new ProdutoModel
             {
                 Nome = this.Produto.Nome,
                 DtHrInclusao = this.Produto.DtHrInclusao,

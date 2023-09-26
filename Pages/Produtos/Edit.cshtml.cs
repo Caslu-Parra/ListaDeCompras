@@ -14,7 +14,7 @@ namespace ListaDeCompras.Pages.Produtos
 
         [BindProperty]
         public ProdutoBindView ProdutoBind { get; set; }
-        public List<Usuario> GetUsuarios() => _conexao.Usuarios.ToList();
+        public List<UsuarioModel> GetUsuarios() => _conexao.Usuarios.ToList();
         public Edit(ILogger<Create> logger, BancoContext dbContext)
         {
             _conexao = dbContext;
@@ -22,7 +22,7 @@ namespace ListaDeCompras.Pages.Produtos
         }
         public async Task<IActionResult> OnGetAsync(int? pId)
         {
-            Produto prod = await _conexao.Produtos.Include(p => p.Responsavel).FirstAsync(p => p.Id == pId);
+            ProdutoModel prod = await _conexao.Produtos.Include(p => p.Responsavel).FirstAsync(p => p.Id == pId);
 
             if (pId == null || prod == null)
             {
@@ -45,7 +45,7 @@ namespace ListaDeCompras.Pages.Produtos
             {
                 return Page();
             }
-            Produto ProdUpdate = await _conexao.Produtos.FindAsync(ProdutoBind.Id);
+            ProdutoModel ProdUpdate = await _conexao.Produtos.FindAsync(ProdutoBind.Id);
 
             ProdUpdate.Nome = ProdutoBind.Nome;
             ProdUpdate.Referencia = ProdutoBind.Referencia;

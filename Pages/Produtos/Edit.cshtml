@@ -22,7 +22,7 @@
             <div class="form-group">
                 <label asp-for="ProdutoBind.ResponsavelId" class="control-label">Usuário Resposável</label>
                 <select class="form-select" asp-for="ProdutoBind.ResponsavelId" required aria-label="Usuário Resposável">
-                    @foreach (Usuario user in Model.GetUsuarios())
+                    @foreach (UsuarioModel user in Model.GetUsuarios())
                     {
                         if (user.Id == Model.ProdutoBind.ResponsavelId)
                         {

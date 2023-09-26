@@ -15,9 +15,9 @@ namespace ListaDeCompras.Pages.Produtos
             _conexao = dbContext;
         }
 
-        public Produto Obter(int pId) => _conexao.Produtos.FirstOrDefault(c => c.Id == pId);
+        public ProdutoModel Obter(int pId) => _conexao.Produtos.FirstOrDefault(c => c.Id == pId);
         public IActionResult OnGet() => Page();
-        public void Criar(Produto produto)
+        public void Criar(ProdutoModel produto)
         {
             try
             {
@@ -26,9 +26,9 @@ namespace ListaDeCompras.Pages.Produtos
             }
             catch (Exception) { throw; }
         }
-        public void Editar(Produto produto)
+        public void Editar(ProdutoModel produto)
         {
-            Produto cAux = this.Obter(produto.Id);
+            ProdutoModel cAux = this.Obter(produto.Id);
             if (cAux != null)
             {
                 cAux.Nome = produto.Nome;
@@ -38,7 +38,7 @@ namespace ListaDeCompras.Pages.Produtos
             else new Exception($"Houve um erro ao tentar atualizar o Produto");
             _conexao.SaveChangesAsync();
         }
-        public List<Produto> Listar() => _conexao.Produtos.Include(p => p.Responsavel).ToList();
+        public List<ProdutoModel> Listar() => _conexao.Produtos.Include(p => p.Responsavel).ToList();
 
         public void Delete(int idProduto)
         {

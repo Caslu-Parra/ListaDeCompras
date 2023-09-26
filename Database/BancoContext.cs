@@ -7,9 +7,9 @@ namespace ListaDeCompras.Database
     {
         public BancoContext(DbContextOptions<BancoContext> options) : base(options) { }
 
-        public DbSet<Usuario>? Usuarios { get; set; }
-        public DbSet<Compra>? Compras { get; set; }
-        public DbSet<Produto>? Produtos { get; set; }
+        public DbSet<UsuarioModel>? Usuarios { get; set; }
+        public DbSet<PedidoModel>? Compras { get; set; }
+        public DbSet<ProdutoModel>? Produtos { get; set; }
 
     }
 }

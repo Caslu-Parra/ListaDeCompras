@@ -21,7 +21,7 @@ namespace ListaDeCompras.Pages.Produtos
         }
         public async Task<IActionResult> OnGet(int pId)
         {
-            Produto? produto = await _conexao.Produtos.FindAsync(pId);
+            ProdutoModel? produto = await _conexao.Produtos.FindAsync(pId);
             if (produto == null)
             {
                 return NotFound(produto);

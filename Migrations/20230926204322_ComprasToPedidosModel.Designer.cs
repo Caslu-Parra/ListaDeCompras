@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ListaDeCompras.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20230918190619_FirtsMigration")]
-    partial class FirtsMigration
+    [Migration("20230926204322_ComprasToPedidosModel")]
+    partial class ComprasToPedidosModel
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -22,7 +22,7 @@ namespace ListaDeCompras.Migrations
                 .HasAnnotation("ProductVersion", "7.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("ListaDeCompras.Models.Compra", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.PedidoModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,19 +34,22 @@ namespace ListaDeCompras.Migrations
                     b.Property<int>("ProdutoId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Quantidade")
+                        .HasColumnType("int");
+
                     b.Property<int>("ResponsavelId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id", "ProdutoId");
 
                     b.HasIndex("ProdutoId");
 
                     b.HasIndex("ResponsavelId");
 
-                    b.ToTable("Compras");
+                    b.ToTable("pedidos");
                 });
 
-            modelBuilder.Entity("ListaDeCompras.Models.Produto", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.ProdutoModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -58,9 +61,6 @@ namespace ListaDeCompras.Migrations
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("longtext");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("int");
 
                     b.Property<string>("Referencia")
                         .HasColumnType("longtext");
@@ -75,7 +75,7 @@ namespace ListaDeCompras.Migrations
                     b.ToTable("Produtos");
                 });
 
-            modelBuilder.Entity("ListaDeCompras.Models.Usuario", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.UsuarioModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -97,15 +97,15 @@ namespace ListaDeCompras.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("ListaDeCompras.Models.Compra", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.PedidoModel", b =>
                 {
-                    b.HasOne("ListaDeCompras.Models.Produto", "Produto")
+                    b.HasOne("ListaDeCompras.Models.ProdutoModel", "Produto")
                         .WithMany()
                         .HasForeignKey("ProdutoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ListaDeCompras.Models.Usuario", "Responsavel")
+                    b.HasOne("ListaDeCompras.Models.UsuarioModel", "Responsavel")
                         .WithMany()
                         .HasForeignKey("ResponsavelId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -116,9 +116,9 @@ namespace ListaDeCompras.Migrations
                     b.Navigation("Responsavel");
                 });
 
-            modelBuilder.Entity("ListaDeCompras.Models.Produto", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.ProdutoModel", b =>
                 {
-                    b.HasOne("ListaDeCompras.Models.Usuario", "Responsavel")
+                    b.HasOne("ListaDeCompras.Models.UsuarioModel", "Responsavel")
                         .WithMany()
                         .HasForeignKey("ResponsavelId")
                         .OnDelete(DeleteBehavior.Cascade)

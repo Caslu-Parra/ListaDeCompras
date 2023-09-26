@@ -19,7 +19,7 @@ namespace ListaDeCompras.Migrations
                 .HasAnnotation("ProductVersion", "7.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("ListaDeCompras.Models.Compra", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.PedidoModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -37,16 +37,16 @@ namespace ListaDeCompras.Migrations
                     b.Property<int>("ResponsavelId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id", "ProdutoId");
 
                     b.HasIndex("ProdutoId");
 
                     b.HasIndex("ResponsavelId");
 
-                    b.ToTable("Compras");
+                    b.ToTable("pedidos");
                 });
 
-            modelBuilder.Entity("ListaDeCompras.Models.Produto", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.ProdutoModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -72,7 +72,7 @@ namespace ListaDeCompras.Migrations
                     b.ToTable("Produtos");
                 });
 
-            modelBuilder.Entity("ListaDeCompras.Models.Usuario", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.UsuarioModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -94,15 +94,15 @@ namespace ListaDeCompras.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("ListaDeCompras.Models.Compra", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.PedidoModel", b =>
                 {
-                    b.HasOne("ListaDeCompras.Models.Produto", "Produto")
+                    b.HasOne("ListaDeCompras.Models.ProdutoModel", "Produto")
                         .WithMany()
                         .HasForeignKey("ProdutoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ListaDeCompras.Models.Usuario", "Responsavel")
+                    b.HasOne("ListaDeCompras.Models.UsuarioModel", "Responsavel")
                         .WithMany()
                         .HasForeignKey("ResponsavelId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -113,9 +113,9 @@ namespace ListaDeCompras.Migrations
                     b.Navigation("Responsavel");
                 });
 
-            modelBuilder.Entity("ListaDeCompras.Models.Produto", b =>
+            modelBuilder.Entity("ListaDeCompras.Models.ProdutoModel", b =>
                 {
-                    b.HasOne("ListaDeCompras.Models.Usuario", "Responsavel")
+                    b.HasOne("ListaDeCompras.Models.UsuarioModel", "Responsavel")
                         .WithMany()
                         .HasForeignKey("ResponsavelId")
                         .OnDelete(DeleteBehavior.Cascade)
