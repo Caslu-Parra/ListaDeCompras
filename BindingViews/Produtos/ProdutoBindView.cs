@@ -11,11 +11,9 @@ namespace ListaDeCompras.Controllers.Produtos
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string? Referencia { get; set; }
+        public string? Marca { get; set; }
 
         public int ResponsavelId { get; set; }
         public DateTime DtHrInclusao { get; set; }
-
-        // public Usuario GetUsuario(BancoContext _conexao, int pId) => _conexao.Usuarios.First(u => u.Id == pId);
     }
 }

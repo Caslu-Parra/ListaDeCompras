@@ -31,7 +31,7 @@ namespace ListaDeCompras.Pages.Produtos
             {
                 Nome = this.Produto.Nome,
                 DtHrInclusao = this.Produto.DtHrInclusao,
-                Referencia = this.Produto.Referencia,
+                Marca = this.Produto.Marca,
                 Responsavel = _conexao.Usuarios.First(u => u.Id == this.Produto.ResponsavelId)
             });
             await _conexao.SaveChangesAsync();

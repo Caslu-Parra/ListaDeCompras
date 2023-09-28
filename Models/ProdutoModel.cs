@@ -9,7 +9,7 @@ namespace ListaDeCompras.Models
         [Key]
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string? Referencia { get; set; }
+        public string? Marca { get; set; }
         public UsuarioModel Responsavel { get; set; }
         public DateTime DtHrInclusao { get; set; }
         

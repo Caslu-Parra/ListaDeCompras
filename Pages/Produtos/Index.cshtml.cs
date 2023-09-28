@@ -32,7 +32,7 @@ namespace ListaDeCompras.Pages.Produtos
             if (cAux != null)
             {
                 cAux.Nome = produto.Nome;
-                cAux.Referencia = produto.Referencia;
+                cAux.Marca = produto.Marca;
                 cAux.Responsavel = produto.Responsavel;
             }
             else new Exception($"Houve um erro ao tentar atualizar o Produto");

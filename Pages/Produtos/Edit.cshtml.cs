@@ -33,7 +33,7 @@ namespace ListaDeCompras.Pages.Produtos
                 Id = prod.Id,
                 Nome = prod.Nome,
                 DtHrInclusao = prod.DtHrInclusao,
-                Referencia = prod.Referencia,
+                Marca = prod.Marca,
                 ResponsavelId = prod.Responsavel.Id
             };
 
@@ -48,7 +48,7 @@ namespace ListaDeCompras.Pages.Produtos
             ProdutoModel ProdUpdate = await _conexao.Produtos.FindAsync(ProdutoBind.Id);
 
             ProdUpdate.Nome = ProdutoBind.Nome;
-            ProdUpdate.Referencia = ProdutoBind.Referencia;
+            ProdUpdate.Marca = ProdutoBind.Marca;
             ProdUpdate.Responsavel = await _conexao.Usuarios.FindAsync(ProdutoBind.ResponsavelId);
 
             _conexao.Produtos.Update(ProdUpdate);

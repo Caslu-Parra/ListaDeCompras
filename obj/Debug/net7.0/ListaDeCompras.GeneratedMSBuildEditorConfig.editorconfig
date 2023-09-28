@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ListaDeCompras
 build_property.RootNamespace = ListaDeCompras
-build_property.ProjectDir = C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\
+build_property.ProjectDir = D:\lp_dir\AspNet\ListaDeCompras\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras
+build_property.MSBuildProjectDirectory = D:\lp_dir\AspNet\ListaDeCompras
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/Index.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/Login/Login.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/Produtos/Create.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/Produtos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/Produtos/Delete.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/Produtos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/Produtos/Edit.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/Produtos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/Produtos/Index.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/Produtos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/shared/NavMenu.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/shared/NavMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hhcmVkXE5hdk1lbnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/shared/_Layout.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/_ViewImports.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/_ViewStart.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.parra/OneDrive - Rolamentos CBF Ltda/Documentos/Projetos_Pessoais/ListaDeCompras/Pages/Sobre/Sobre.cshtml]
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/Sobre/Sobre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29icmVcU29icmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nifok24ndn

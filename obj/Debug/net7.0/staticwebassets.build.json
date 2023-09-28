@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3qZf90YZoiYVDsW1lYQPeBe16TNi0oW23erOPzYYukI=",
+  "Hash": "nEy1j+Q+YnPUyQ8LaNZf5QIfWrp0OhzjpE3+6mK+uhc=",
   "Source": "ListaDeCompras",
   "BasePath": "_content/ListaDeCompras",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ListaDeCompras\\wwwroot",
       "Source": "ListaDeCompras",
-      "ContentRoot": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\wwwroot\\",
+      "ContentRoot": "D:\\lp_dir\\AspNet\\ListaDeCompras\\wwwroot\\",
       "BasePath": "_content/ListaDeCompras",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ListaDeCompras.styles.css",
+      "Identity": "D:\\lp_dir\\AspNet\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ListaDeCompras.styles.css",
       "SourceId": "ListaDeCompras",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\lp_dir\\AspNet\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ListaDeCompras",
       "RelativePath": "ListaDeCompras.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ListaDeCompras.styles.css"
+      "OriginalItemSpec": "D:\\lp_dir\\AspNet\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ListaDeCompras.styles.css"
     },
     {
-      "Identity": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ListaDeCompras.bundle.scp.css",
+      "Identity": "D:\\lp_dir\\AspNet\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ListaDeCompras.bundle.scp.css",
       "SourceId": "ListaDeCompras",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\lp_dir\\AspNet\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ListaDeCompras",
       "RelativePath": "ListaDeCompras.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ListaDeCompras.bundle.scp.css"
+      "OriginalItemSpec": "D:\\lp_dir\\AspNet\\ListaDeCompras\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ListaDeCompras.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\wwwroot\\css\\site.css",
+      "Identity": "D:\\lp_dir\\AspNet\\ListaDeCompras\\wwwroot\\css\\site.css",
       "SourceId": "ListaDeCompras",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\wwwroot\\",
+      "ContentRoot": "D:\\lp_dir\\AspNet\\ListaDeCompras\\wwwroot\\",
       "BasePath": "_content/ListaDeCompras",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\wwwroot\\js\\site.js",
+      "Identity": "D:\\lp_dir\\AspNet\\ListaDeCompras\\wwwroot\\js\\site.js",
       "SourceId": "ListaDeCompras",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lucas.parra\\OneDrive - Rolamentos CBF Ltda\\Documentos\\Projetos_Pessoais\\ListaDeCompras\\wwwroot\\",
+      "ContentRoot": "D:\\lp_dir\\AspNet\\ListaDeCompras\\wwwroot\\",
       "BasePath": "_content/ListaDeCompras",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
