@@ -1,5 +1,5 @@
 /appsettings.Development.json
 /appsettings.json
 /.vscode/
-/bin/
-/obj/
+bin/
+obj/

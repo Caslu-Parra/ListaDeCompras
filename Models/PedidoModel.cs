@@ -7,10 +7,11 @@ namespace ListaDeCompras.Models
     public class PedidoModel
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public DateTime DtHr { get; set; }
-        [Key]
         public UsuarioModel Responsavel { get; set; }
+        [Key]
         public ProdutoModel Produto { get; set; }
         public int Quantidade { get; set; }
     }

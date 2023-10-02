@@ -1,22 +1,25 @@
 @page
-@model ListaDeCompras.Pages.Produtos.Index
+@model ListaDeCompras.Pages.Pedidos.Index
 @{
-    ViewData["Title"] = "Listagem de Produtos";
+    ViewData["Title"] = "Listagem de Pedidos";
+    List<PedidoModel> lPedidos = await Model.Listar();
 }
+
 <div class="text-center">
     <h1 class="display-4">@ViewData["Title"]</h1>
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <a class="btn btn-primary" role="button" asp-page="./Create">Adicionar</a>
+        <a class="btn btn-primary" role="button" asp-page="./Cadastro">Adicionar</a>
     </div>
     <br />
-    @if (Model.Listar().Any())
+    @if (lPedidos.Any())
     {
         <table class="table table-striped" id="dtprodutos">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Produto</th>
+                    <th scope="col">Quantidade</th>
                     <th scope="col">Marca de Preferência</th>
                     <th scope="col">Responsavel</th>
                     <th scope="col">Data de Inclusão</th>
@@ -24,20 +27,21 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (ProdutoModel produto in Model.Listar())
+                @foreach (PedidoModel ped in lPedidos)
                 {
                     <tr scope="row">
-                        <th id="@produto.Id">@produto.Id</th>
-                        <td>@produto.Nome</td>
-                        <td>@produto.Marca</td>
-                        <td>@produto.Responsavel.Nome</td>
-                        <td>@produto.DtHrInclusao</td>
+                        <td>@ped.Id</td>
+                        <td>@ped.Produto.Id - @ped.Produto.Nome</td>
+                        <td>@ped.Quantidade</td>
+                        <td>@ped.Produto.Marca</td>
+                        <td>@ped.Responsavel.Id - @ped.Responsavel.Nome</td>
+                        <td>@ped.DtHr</td>
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <a type="button" class="btn btn-sm btn-primary" asp-page="./Edit"
-                                    asp-route-pId="@produto.Id">Editar</a>
+                                <a type="button" class="btn btn-sm btn-primary" asp-page="./Cadastro"
+                                    asp-route-pId="@ped.Id">Editar</a>
                                 <a type="button" class="btn btn-sm btn-danger" asp-page="./Delete"
-                                    asp-route-pId="@produto.Id">Deletar</a>
+                                    asp-route-pId="@ped.Id">Deletar</a>
                             </div>
                         </td>
                     </tr>
@@ -47,10 +51,6 @@
     }
     else
     {
-        <h3>Não há produtos a serem listados</h3>
+        <h3>Não há pedidos à serem listados</h3>
     }
 </div>
-@section scripts {
-    <script src="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.js"></script>
-    <script src="~/js/site.js"></script>
-}

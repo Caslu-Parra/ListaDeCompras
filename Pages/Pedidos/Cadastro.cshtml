@@ -1,0 +1,63 @@
+@page
+@model ListaDeCompras.Pages.Pedidos.Cadastro
+@{
+    ViewData["Title"] = "Cadastro de Pedidos";
+    bool flag = Model.PedidoBind is not null;
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="col-md-4">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="PedidoBind.ResponsavelId" class="control-label">Usuário Resposável</label>
+            <select class="form-select" asp-for="PedidoBind.ResponsavelId" required aria-label="Usuário Resposável">
+                @foreach (UsuarioModel user in await Model.GetUsuarios())
+                {
+                    <option asp-for="PedidoBind.ResponsavelId" value=@user.Id>@user.Nome</option>
+                }
+            </select>
+            <span asp-validation-for="PedidoBind.ResponsavelId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PedidoBind.ProdutoId" class="control-label">Produto a ser Comprado</label>
+            <select class="form-select" asp-for="PedidoBind.ProdutoId" required aria-label="Produto">
+                @foreach (ProdutoModel prod in await Model.GetProdutos())
+                {
+                    <option data-bs-toggle="tooltip" data-bs-placement="top" title="@prod.Id"
+                    asp-for="PedidoBind.ProdutoId" value=@prod.Id >@prod.Nome - @prod.Marca</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label asp-for="PedidoBind.Quantidade" class="control-label">Quantidade</label>
+            <input asp-for="PedidoBind.Quantidade" type="number" class="form-control" />
+        </div>
+        @if(flag)
+        {
+            <div class="form-group">
+                <label asp-for="PedidoBind.Id" class="control-label">Número do Pedido</label>
+                <input asp-for="PedidoBind.Id" type="number" class="form-control" readonly/>
+                <span asp-validation-for="PedidoBind.Id" class="text-danger"></span>
+            </div>
+         }
+        <div class="form-group">
+            <label asp-for="PedidoBind.DtHr" class="control-label">Horário da Inclusão</label>
+            <input asp-for="PedidoBind.DtHr" type="datetime-local" class="form-control" readonly 
+            value=@{
+                        if(flag){
+                            @Model.PedidoBind.DtHr.ToString("yyyy-MM-dd HH:mm:ss")
+                        } else {
+                            @DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                        }
+                    } />
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="submit" value="Adicionar" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+<div>
+    <a asp-page="Index">Voltar para o menu</a>
+</div>

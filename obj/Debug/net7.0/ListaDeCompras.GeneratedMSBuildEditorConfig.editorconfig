@@ -24,6 +24,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/Pedidos/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVkaWRvc1xDYWRhc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lp_dir/AspNet/ListaDeCompras/Pages/Pedidos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVkaWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/lp_dir/AspNet/ListaDeCompras/Pages/Produtos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
