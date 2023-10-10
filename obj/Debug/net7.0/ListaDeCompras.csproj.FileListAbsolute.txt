@@ -40,6 +40,14 @@ C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.pdb
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.genruntimeconfig.cache
 C:\Users\lucas.parra\OneDrive - Rolamentos CBF Ltda\Documentos\Projetos_Pessoais\ListaDeCompras\obj\Debug\net7.0\ref\ListaDeCompras.dll
+D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.csproj.AssemblyReference.cache
+D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.GeneratedMSBuildEditorConfig.editorconfig
+D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.AssemblyInfoInputs.cache
+D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.AssemblyInfo.cs
+D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.csproj.CoreCompileInputs.cache
+D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.MvcApplicationPartsAssemblyInfo.cache
+D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.RazorAssemblyInfo.cache
+D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.RazorAssemblyInfo.cs
 D:\lp_dir\AspNet\ListaDeCompras\bin\Debug\net7.0\appsettings.Development.json
 D:\lp_dir\AspNet\ListaDeCompras\bin\Debug\net7.0\appsettings.json
 D:\lp_dir\AspNet\ListaDeCompras\bin\Debug\net7.0\ListaDeCompras.staticwebassets.runtime.json
@@ -58,14 +66,6 @@ D:\lp_dir\AspNet\ListaDeCompras\bin\Debug\net7.0\Mono.TextTemplating.dll
 D:\lp_dir\AspNet\ListaDeCompras\bin\Debug\net7.0\MySqlConnector.dll
 D:\lp_dir\AspNet\ListaDeCompras\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
 D:\lp_dir\AspNet\ListaDeCompras\bin\Debug\net7.0\System.CodeDom.dll
-D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.csproj.AssemblyReference.cache
-D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.GeneratedMSBuildEditorConfig.editorconfig
-D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.AssemblyInfoInputs.cache
-D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.AssemblyInfo.cs
-D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.csproj.CoreCompileInputs.cache
-D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.MvcApplicationPartsAssemblyInfo.cache
-D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.RazorAssemblyInfo.cache
-D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\ListaDeCompras.RazorAssemblyInfo.cs
 D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\staticwebassets\msbuild.ListaDeCompras.Microsoft.AspNetCore.StaticWebAssets.props
 D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\staticwebassets\msbuild.build.ListaDeCompras.props
 D:\lp_dir\AspNet\ListaDeCompras\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ListaDeCompras.props
